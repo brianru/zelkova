@@ -8,6 +8,7 @@
             [jamesmacaulay.async-tools.core :as tools])
   (:require-macros [cljs.core.async.macros :refer [go go-loop]]))
 
+
 (enable-console-print!)
 
 (def init-state {:placed-boxes []

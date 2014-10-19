@@ -28,10 +28,10 @@ alandipert.kahn.no_incoming = (function no_incoming(g){var nodes = cljs.core.set
 * edges only.  Example: {:a #{:b}} => {:a #{:b}, :b #{}}
 */
 alandipert.kahn.normalize = (function normalize(g){var have_incoming = cljs.core.apply.call(null,clojure.set.union,cljs.core.vals.call(null,g));return cljs.core.reduce.call(null,((function (have_incoming){
-return (function (p1__24130_SHARP_,p2__24131_SHARP_){if(cljs.core.truth_(cljs.core.get.call(null,p1__24130_SHARP_,p2__24131_SHARP_)))
-{return p1__24130_SHARP_;
+return (function (p1__30338_SHARP_,p2__30339_SHARP_){if(cljs.core.truth_(cljs.core.get.call(null,p1__30338_SHARP_,p2__30339_SHARP_)))
+{return p1__30338_SHARP_;
 } else
-{return cljs.core.assoc.call(null,p1__24130_SHARP_,p2__24131_SHARP_,cljs.core.PersistentHashSet.EMPTY);
+{return cljs.core.assoc.call(null,p1__30338_SHARP_,p2__30339_SHARP_,cljs.core.PersistentHashSet.EMPTY);
 }
 });})(have_incoming))
 ,g,have_incoming);
@@ -53,16 +53,16 @@ if(cljs.core.empty_QMARK_.call(null,s))
 {return null;
 }
 } else
-{var vec__24135 = alandipert.kahn.take_1.call(null,s);var n = cljs.core.nth.call(null,vec__24135,(0),null);var s_SINGLEQUOTE_ = cljs.core.nth.call(null,vec__24135,(1),null);var m = g.call(null,n);var g_SINGLEQUOTE_ = cljs.core.reduce.call(null,((function (g,l,s,vec__24135,n,s_SINGLEQUOTE_,m){
-return (function (p1__24132_SHARP_,p2__24133_SHARP_){return cljs.core.update_in.call(null,p1__24132_SHARP_,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [n], null),alandipert.kahn.without,p2__24133_SHARP_);
-});})(g,l,s,vec__24135,n,s_SINGLEQUOTE_,m))
+{var vec__30343 = alandipert.kahn.take_1.call(null,s);var n = cljs.core.nth.call(null,vec__30343,(0),null);var s_SINGLEQUOTE_ = cljs.core.nth.call(null,vec__30343,(1),null);var m = g.call(null,n);var g_SINGLEQUOTE_ = cljs.core.reduce.call(null,((function (g,l,s,vec__30343,n,s_SINGLEQUOTE_,m){
+return (function (p1__30340_SHARP_,p2__30341_SHARP_){return cljs.core.update_in.call(null,p1__30340_SHARP_,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [n], null),alandipert.kahn.without,p2__30341_SHARP_);
+});})(g,l,s,vec__30343,n,s_SINGLEQUOTE_,m))
 ,g,m);{
-var G__24136 = g_SINGLEQUOTE_;
-var G__24137 = cljs.core.conj.call(null,l,n);
-var G__24138 = clojure.set.union.call(null,s_SINGLEQUOTE_,clojure.set.intersection.call(null,alandipert.kahn.no_incoming.call(null,g_SINGLEQUOTE_),m));
-g = G__24136;
-l = G__24137;
-s = G__24138;
+var G__30344 = g_SINGLEQUOTE_;
+var G__30345 = cljs.core.conj.call(null,l,n);
+var G__30346 = clojure.set.union.call(null,s_SINGLEQUOTE_,clojure.set.intersection.call(null,alandipert.kahn.no_incoming.call(null,g_SINGLEQUOTE_),m));
+g = G__30344;
+l = G__30345;
+s = G__30346;
 continue;
 }
 }
