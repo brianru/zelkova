@@ -183,10 +183,11 @@
       (dom/div #js {:style #js {:position "relative"}}
         (dom/h1 nil "Drag and drop")
         (dom/p nil
-               "Drag to create boxes, drag to move them around, and click to remove them. "
                (dom/a #js {:href "https://github.com/jamesmacaulay/zelkova/blob/gh-pages/examples/drag-and-drop/src/drag_and_drop/core.cljs"}
                       "View source")
                ".")
+        (dom/p nil
+               "Drag to create boxes, drag to move them around, and click to remove them.")
         (dom/pre nil (.stringify js/JSON (clj->js state) nil 2))))))
 
 (om/root

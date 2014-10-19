@@ -18,5 +18,7 @@
               :compiler {
                 :output-to "drag_and_drop.js"
                 :output-dir "out"
-                :optimizations :none
-                :source-map true}}]})
+                :optimizations :advanced
+                :pretty-print false
+                :preamble ["react/react.min.js"]
+                :externs ["react/externs/react.js"]}}]})
