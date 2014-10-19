@@ -12,8 +12,9 @@ goog.addDependency("../cljs/core/async/impl/timers.js", ['cljs.core.async.impl.t
 goog.addDependency("../cljs/core/async.js", ['cljs.core.async'], ['cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.buffers', 'cljs.core.async.impl.protocols', 'cljs.core.async.impl.ioc_helpers', 'cljs.core.async.impl.timers']);
 goog.addDependency("../jamesmacaulay/async_tools/core.js", ['jamesmacaulay.async_tools.core'], ['cljs.core.async.impl.channels', 'cljs.core', 'cljs.core.async', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../jamesmacaulay/zelkova/signal.js", ['jamesmacaulay.zelkova.signal'], ['cljs.core.async.impl.channels', 'clojure.zip', 'alandipert.kahn', 'jamesmacaulay.async_tools.core', 'cljs.core', 'cljs.core.async', 'cljs.core.async.impl.protocols']);
-goog.addDependency("../jamesmacaulay/zelkova/mouse.js", ['jamesmacaulay.zelkova.mouse'], ['jamesmacaulay.zelkova.signal', 'cljs.core', 'cljs.core.async', 'goog.events']);
 goog.addDependency("../jamesmacaulay/zelkova/time.js", ['jamesmacaulay.zelkova.time'], ['jamesmacaulay.zelkova.signal', 'cljs.core', 'cljs.core.async']);
 goog.addDependency("../om/dom.js", ['om.dom'], ['cljs.core']);
+goog.addDependency("../jamesmacaulay/zelkova/window.js", ['jamesmacaulay.zelkova.window'], ['jamesmacaulay.zelkova.signal', 'jamesmacaulay.async_tools.core', 'cljs.core', 'cljs.core.async', 'goog.events']);
 goog.addDependency("../om/core.js", ['om.core'], ['cljs.core', 'om.dom', 'goog.ui.IdGenerator']);
-goog.addDependency("../drag_and_drop/core.js", ['drag_and_drop.core'], ['jamesmacaulay.zelkova.mouse', 'jamesmacaulay.zelkova.signal', 'jamesmacaulay.zelkova.time', 'jamesmacaulay.async_tools.core', 'cljs.core', 'om.dom', 'cljs.core.async', 'om.core']);
+goog.addDependency("../jamesmacaulay/zelkova/keyboard.js", ['jamesmacaulay.zelkova.keyboard'], ['jamesmacaulay.zelkova.signal', 'cljs.core', 'cljs.core.async', 'goog.events']);
+goog.addDependency("../mario/core.js", ['mario.core'], ['jamesmacaulay.zelkova.signal', 'jamesmacaulay.zelkova.time', 'jamesmacaulay.async_tools.core', 'cljs.core', 'om.dom', 'cljs.core.async', 'jamesmacaulay.zelkova.window', 'om.core', 'jamesmacaulay.zelkova.keyboard']);

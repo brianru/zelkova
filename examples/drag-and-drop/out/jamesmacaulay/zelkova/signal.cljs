@@ -231,6 +231,11 @@
   [switch-sig base value-sig]
   (keep-when (lift not switch-sig) base value-sig))
 
+      
+(defn console-log
+  [sig]
+  (lift (fn [x] (js/console.log x) x) sig))
+
 (defn log
   [sig]
   (lift (fn [x] (pr x) x) sig))
