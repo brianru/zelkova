@@ -23,11 +23,11 @@ var args = null;if (arguments.length > 2) {
   args = cljs.core.array_seq(Array.prototype.slice.call(arguments, 2),0);} 
 return listen__delegate.call(this,el,type,args);};
 listen.cljs$lang$maxFixedArity = 2;
-listen.cljs$lang$applyTo = (function (arglist__30153){
-var el = cljs.core.first(arglist__30153);
-arglist__30153 = cljs.core.next(arglist__30153);
-var type = cljs.core.first(arglist__30153);
-var args = cljs.core.rest(arglist__30153);
+listen.cljs$lang$applyTo = (function (arglist__38816){
+var el = cljs.core.first(arglist__38816);
+arglist__38816 = cljs.core.next(arglist__38816);
+var type = cljs.core.first(arglist__38816);
+var args = cljs.core.rest(arglist__38816);
 return listen__delegate(el,type,args);
 });
 listen.cljs$core$IFn$_invoke$arity$variadic = listen__delegate;
